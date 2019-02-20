@@ -1,0 +1,16 @@
+<h2>Reorder Array - Input isSwap = false</h2>
+<div class="card" *ngFor="let item of items;let index = index;" megaSimpleDndList [items]="items" [index]="index" (dropped)="onDropped($event)">
+	<div class="card-content">
+		{{item}}
+	</div>
+</div>
+
+<p></p>
+
+<h2>Swap Items in the Array - Input isSwap = true</h2>
+<div class="card" *ngFor="let item of items2;let index = index;" megaSimpleDndList [isSwap]="true" [items]="items2" [index]="index" (dropped)="onDropped2($event)">
+	<div class="card-content">
+		{{item}}
+	</div>
+</div>
+
